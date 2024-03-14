@@ -22,11 +22,9 @@ Güvenilir kiralık hacker sitesi arıyorsanız bize ulaşabilirsiniz. WhatsApp 
 HACKER KİRALAMA® PLATFORMU İLETİŞİM
 WhatsApp: DESTEK HATTI
 
-Web: https://premiumsec.cloud
-
+Web: https://oxosystems.com.tr
 Twitter: https://x.com/DeepWeb_Hacker
-
-Face: https://www.facebook.com/KiralikHackings
+Face: https://www.facebook.com/Kiralik.Hacker.Pro
 
 — HASTAD ETİKET BULUTU —
 
