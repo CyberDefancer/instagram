@@ -1,4 +1,5 @@
 KİRALIK HACKER® PLATFORMU
+https://kiralikhackers.hashnode.dev
 Türkiye'nin en güvenilir, uzman ve profesyonel kiralık hacker ekibi ile çalışan bir platformuz. Hizmetlerimiz hakkında detaylı bilgi almak için WhatsApp Destek hattımızdan bilgi alabilir veya genel bilgi almak için Websitemizi ziyaret edebilirsiniz.
 
 Profesyonel Kiralık Hacker Hizmetleri
@@ -22,7 +23,7 @@ Güvenilir kiralık hacker sitesi arıyorsanız bize ulaşabilirsiniz. WhatsApp 
 HACKER KİRALAMA® PLATFORMU İLETİŞİM
 WhatsApp: DESTEK HATTI
 
-Web: https://oxosystems.com.tr
+Web: https://kiralikhackers.hashnode.dev
 Twitter: https://x.com/DeepWeb_Hacker
 Face: https://www.facebook.com/Kiralik.Hacker.Pro
 
