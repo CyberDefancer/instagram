@@ -21,11 +21,8 @@ Kiralık hacker arıyorum arama terimi ile Google da bir çok siteye rastlayabil
 Güvenilir kiralık hacker sitesi arıyorsanız bize ulaşabilirsiniz. WhatsApp destek hattımızdan talebinizi iletin. Size, talebinize uygun bir hacker 20 dk içerisinde ulaşıp detaylar hakkında bilgi versin. Unutmayın ki tüm hizmetler gizlilik politikası ilkelerine uygun olarak verilmektedir.
 
 HACKER KİRALAMA® PLATFORMU İLETİŞİM
-WhatsApp: DESTEK HATTI
+WhatsApp: DESTEK HATTI +905518777084
 
-Web: https://kiralikhackers.hashnode.dev
-Twitter: https://x.com/DeepWeb_Hacker
-Face: https://www.facebook.com/Kiralik.Hacker.Pro
 
 — HASTAD ETİKET BULUTU —
 
