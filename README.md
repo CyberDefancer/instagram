@@ -1,5 +1,5 @@
 KİRALIK HACKER® PLATFORMU
-https://kiralikhackers.hashnode.dev
+https://wa.me/905518777084
 Türkiye'nin en güvenilir, uzman ve profesyonel kiralık hacker ekibi ile çalışan bir platformuz. Hizmetlerimiz hakkında detaylı bilgi almak için WhatsApp Destek hattımızdan bilgi alabilir veya genel bilgi almak için Websitemizi ziyaret edebilirsiniz.
 
 Profesyonel Kiralık Hacker Hizmetleri
