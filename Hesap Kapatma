@@ -1,0 +1,44 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+# Instagram hesabının kullanıcı adı ve şifresi
+username = "your_username"
+password = "your_password"
+
+# Selenium web driver'ı başlatın
+driver = webdriver.Chrome()
+
+# Instagram'a giriş yapın
+driver.get("https://www.instagram.com/accounts/login/")
+time.sleep(2)
+
+# Kullanıcı adı ve şifre alanlarını bulun ve girin
+username_field = driver.find_element_by_name("username")
+username_field.send_keys(username)
+password_field = driver.find_element_by_name("password")
+password_field.send_keys(password)
+password_field.send_keys(Keys.RETURN)
+
+time.sleep(5)
+
+# Profil sayfasına gidin
+driver.get("https://www.instagram.com/" + username + "/")
+time.sleep(2)
+
+# Ayarlar butonuna tıklayın
+settings_button = driver.find_element_by_xpath("//button[contains(text(), 'Ayarlar')]")
+settings_button.click()
+time.sleep(2)
+
+# Hesabımı kapat butonuna tıklayın
+close_account_button = driver.find_element_by_xpath("//button[contains(text(), 'Hesabımı Kapat')]")
+close_account_button.click()
+time.sleep(2)
+
+# Hesabı kapatma onayına tıklayın
+confirm_delete_button = driver.find_element_by_xpath("//button[contains(text(), 'Hesabımı Kapat')]")
+confirm_delete_button.click()
+
+# Web driver'ı kapatın
+driver.quit()
