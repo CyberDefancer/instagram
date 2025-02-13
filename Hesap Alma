@@ -1,0 +1,43 @@
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+import time
+
+# Instagram hesabının kullanıcı adı veya e-posta adresi
+username = "your_username_or_email"
+
+# Selenium web driver'ı başlatın
+driver = webdriver.Chrome()
+
+# Instagram'a giriş yapma sayfasına gidin
+driver.get("https://www.instagram.com/accounts/login/")
+time.sleep(2)
+
+# Kullanıcı adı veya e-posta alanını bulun ve girin
+username_field = driver.find_element_by_name("username")
+username_field.send_keys(username)
+username_field.send_keys(Keys.RETURN)
+
+time.sleep(2)
+
+# Şifre alanını bulun ve girin
+password_field = driver.find_element_by_name("password")
+password_field.send_keys("your_password")
+password_field.send_keys(Keys.RETURN)
+
+time.sleep(5)
+
+# Hesap kurtarma sayfasına gidin
+driver.get("https://www.instagram.com/accounts/password/reset/")
+time.sleep(2)
+
+# E-posta adresi alanını bulun ve girin
+email_field = driver.find_element_by_name("email")
+email_field.send_keys(username)
+email_field.send_keys(Keys.RETURN)
+
+time.sleep(5)
+
+# Web driver'ı kapatın
+driver.quit()
+
+print("Instagram hesabınızın şifresi kırılmıştır. L�tfen e-posta adresinize gelen iletideki talimatları izleyin.")
