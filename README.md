@@ -6,7 +6,7 @@ Instagram hesabınız kapatıldı mı? Şifrenizi mi unuttunuz? Profesyonel hack
 
 İletişim:
 
-r3dCodeR Web Sitesi: https://rootdestek.wordpress.com
+
 
 WhatsApp: +90546 592 0064
 
