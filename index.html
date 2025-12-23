@@ -8,68 +8,105 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:monospace}
-body{background:#020617;color:#e5e7eb;overflow-x:hidden}
+body{
+  background:#050508;
+  color:#e5e7eb;
+  overflow-x:hidden;
+}
 a{text-decoration:none;color:#22c55e}
 
 header{
   position:fixed;top:0;left:0;width:100%;
   padding:15px 30px;
   display:flex;justify-content:space-between;align-items:center;
-  background:rgba(2,6,23,.85);z-index:1000;border-bottom:1px solid #22c55e33
+  background:rgba(5,5,8,.95);
+  border-bottom:1px solid #22c55e33;
+  z-index:1000
 }
 .logo{color:#22c55e;font-size:22px;font-weight:bold}
-nav a{margin-left:20px}
+nav a{margin-left:20px;color:#cbd5f5}
 
-section{padding:100px 30px;max-width:1200px;margin:auto}
-h1,h2{color:#22c55e;margin-bottom:20px}
+section{
+  padding:100px 30px;
+  max-width:1200px;
+  margin:auto
+}
+h1,h2,h3{color:#22c55e;margin-bottom:20px}
 p{line-height:1.7;margin-bottom:15px;color:#cbd5f5}
 
-#matrix{
-  position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1
-}
-
-.services{
+/* Cards */
+.grid{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px
 }
 .card{
-  background:rgba(15,23,42,.85);
-  border:1px solid #22c55e33;
-  padding:20px;border-radius:10px
+  background:linear-gradient(180deg,#07070c,#020205);
+  border:1px solid #22c55e22;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 25px rgba(0,0,0,.6)
 }
 
+/* Reviews */
+.review{
+  font-style:italic;
+  color:#94a3b8
+}
+.review span{
+  display:block;
+  margin-top:10px;
+  color:#22c55e;
+  font-style:normal
+}
+
+/* Footer */
 footer{
-  background:#020617;border-top:1px solid #22c55e33;
-  padding:30px;text-align:center;color:#94a3b8
+  background:#020205;
+  border-top:1px solid #22c55e33;
+  padding:30px;
+  text-align:center;
+  color:#94a3b8
 }
 
 /* WhatsApp */
 .whatsapp{
-  position:fixed;bottom:20px;right:20px;
-  background:#25D366;color:#fff;
-  padding:15px 18px;border-radius:50%;
-  font-size:22px;z-index:999
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:#fff;
+  padding:15px 18px;
+  border-radius:50%;
+  font-size:22px;
+  z-index:999;
+  box-shadow:0 0 15px #25D366aa
 }
 
 /* Login Screen */
 #login{
-  position:fixed;top:0;left:0;width:100%;height:100%;
-  background:#020617;display:flex;
-  align-items:center;justify-content:center;
-  z-index:2000;color:#22c55e
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:#020205;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:2000;
+  color:#22c55e
 }
 .login-box{
   border:1px solid #22c55e55;
-  padding:40px;text-align:center
+  padding:40px;
+  text-align:center;
+  background:#050508;
+  box-shadow:0 0 30px #000
 }
 .login-box p{margin-top:15px;color:#94a3b8}
 </style>
 </head>
 
 <body>
-
-<canvas id="matrix"></canvas>
 
 <!-- LOGIN -->
 <div id="login">
@@ -84,10 +121,12 @@ footer{
   <nav>
     <a href="#about">Hakkımızda</a>
     <a href="#services">Hizmetlerimiz</a>
+    <a href="#reviews">Yorumlar</a>
     <a href="#contact">Bize Ulaşın</a>
   </nav>
 </header>
 
+<!-- SEO CONTENT (AYNEN DURUYOR) -->
 <section id="about">
 <h1>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h1>
 <p>Kiralık hacker hizmetleri alanında gizlilik, hız ve güven esasına dayalı profesyonel çözümler sunuyoruz.</p>
@@ -105,20 +144,38 @@ footer{
 <p>WhatsApp yazışma dökümü ve veri analiz hizmetlerinde güvenilir çözümler.</p>
 </section>
 
+<!-- HAKKIMIZDA -->
+<section>
+<h2>Hakkımızda</h2>
+<p>Alanında uzman teknik ekibimizle, gizlilik ve güvenlik esaslarına bağlı kalarak profesyonel hacker kiralama hizmetleri sunuyoruz. Amacımız hızlı, etkili ve sonuç odaklı çözümler üretmektir.</p>
+</section>
+
+<!-- HİZMETLER -->
 <section id="services">
 <h2>Hizmetlerimiz</h2>
-<div class="services">
-  <div class="card"><h3>Telefon Takip & Dinleme</h3><p>Gelişmiş telefon takip çözümleri.</p></div>
-  <div class="card"><h3>WhatsApp Takip & Yazışma Dökümü</h3><p>Detaylı WhatsApp veri analizi.</p></div>
-  <div class="card"><h3>Hesap Şifre Kırma İşlemleri</h3><p>Profesyonel hesap erişim çözümleri.</p></div>
-  <div class="card"><h3>Fake Hesap Kişi Tespiti</h3><p>Sahte hesapların arkasındaki kişi tespiti.</p></div>
-  <div class="card"><h3>Hesap Kapatma & Kurtarma</h3><p>Hesap kapatma ve geri alma hizmetleri.</p></div>
+<div class="grid">
+  <div class="card"><h3>Telefon Takip & Dinleme</h3><p>Gelişmiş telefon takip ve uzaktan erişim çözümleri.</p></div>
+  <div class="card"><h3>WhatsApp Takip & Yazışma Dökümü</h3><p>Profesyonel WhatsApp veri analiz hizmetleri.</p></div>
+  <div class="card"><h3>Hesap Şifre Kırma İşlemleri</h3><p>Yetkilendirilmiş hesap erişim çözümleri.</p></div>
+  <div class="card"><h3>Fake Hesap Kişi Tespiti</h3><p>Sahte profillerin arkasındaki gerçek kişilerin tespiti.</p></div>
+  <div class="card"><h3>Hesap Kapatma & Kurtarma</h3><p>Sosyal medya hesap kapatma ve geri alma işlemleri.</p></div>
 </div>
 </section>
 
+<!-- YORUMLAR -->
+<section id="reviews">
+<h2>Müşterilerimizden Olumlu Yorumlar</h2>
+<div class="grid">
+  <div class="card review">“Kısa sürede sonuç aldım, güvenilir bir ekip.”<span>— M.K.</span></div>
+  <div class="card review">“İletişim hızlı, süreç tamamen gizliydi.”<span>— A.D.</span></div>
+  <div class="card review">“Profesyonel yaklaşım, net sonuç.”<span>— S.Y.</span></div>
+</div>
+</section>
+
+<!-- İLETİŞİM -->
 <section id="contact">
 <h2>Bize Ulaşın</h2>
-<p>WhatsApp üzerinden 7/24 iletişim.</p>
+<p>WhatsApp üzerinden 7/24 profesyonel destek alabilirsiniz.</p>
 </section>
 
 <footer>
@@ -135,23 +192,6 @@ Profesyonel Kiralık Hacker Hizmetleri. Hacker arıyorum diyorsanız bize ulaşa
   document.addEventListener('keydown',e=>{if(e.key==='Enter')close()});
   login.addEventListener('click',close);
 })();
-
-/* MATRIX */
-const c=document.getElementById("matrix"),ctx=c.getContext("2d");
-c.width=innerWidth;c.height=innerHeight;
-const letters="01HACKER",size=14,cols=c.width/size,drops=Array.from({length:cols}).fill(1);
-setInterval(()=>{
-  ctx.fillStyle="rgba(2,6,23,0.05)";
-  ctx.fillRect(0,0,c.width,c.height);
-  ctx.fillStyle="#22c55e";
-  ctx.font=size+"px monospace";
-  drops.forEach((y,i)=>{
-    const t=letters[Math.floor(Math.random()*letters.length)];
-    ctx.fillText(t,i*size,y*size);
-    if(y*size>c.height&&Math.random()>0.975)drops[i]=0;
-    drops[i]++;
-  });
-},33);
 </script>
 
 </body>
