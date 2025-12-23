@@ -3,86 +3,155 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kiralık Hacker Hizmetleri | Profesyonel Dijital Güvenlik</title>
-<meta name="description" content="Kiralık hacker, hacker kiralama, hesap güvenliği, dijital analiz ve etik siber güvenlik hizmetleri.">
+
+<title>Kiralık Hacker | Hacker Kiralama Hizmetleri</title>
+<meta name="description" content="Kiralık hacker, hacker kiralama, dijital güvenlik ve analiz hizmetleri.">
 <meta name="keywords" content="kiralık hacker, hacker kiralama, hacker arıyorum, kiralık hacker iletişim">
 
 <style>
+*{box-sizing:border-box}
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0b0f1a;
-    color:#eaeaea;
+    font-family: 'Courier New', monospace;
+    background:#020617;
+    color:#e5e7eb;
 }
+
+/* HEADER */
 header{
-    background:linear-gradient(135deg,#111827,#020617);
-    padding:60px 20px;
+    background:radial-gradient(circle at top,#022c22,#020617);
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #134e4a;
+}
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#22c55e;
+    letter-spacing:2px;
+}
+nav a{
+    color:#9ca3af;
+    margin-left:20px;
+    text-decoration:none;
+    font-size:14px;
+}
+nav a:hover{color:#22c55e}
+
+/* HERO */
+.hero{
+    padding:100px 20px;
     text-align:center;
+    background:
+      linear-gradient(180deg,rgba(2,6,23,.8),rgba(2,6,23,1)),
+      url('https://i.imgur.com/9Z6GZ6T.jpg') center/cover;
 }
-header h1{
-    font-size:38px;
-    margin-bottom:15px;
+.hero h1{
+    font-size:42px;
+    color:#22c55e;
 }
-header p{
+.hero p{
     max-width:800px;
-    margin:auto;
-    color:#c7c7c7;
-    font-size:17px;
+    margin:20px auto;
+    color:#cbd5f5;
 }
-.btn{
+.hero a{
     display:inline-block;
-    margin-top:25px;
-    padding:14px 30px;
+    margin-top:30px;
+    padding:15px 35px;
     background:#16a34a;
     color:#fff;
     text-decoration:none;
     border-radius:6px;
     font-weight:bold;
 }
+
+/* SECTIONS */
 section{
-    padding:60px 20px;
+    padding:70px 20px;
     max-width:1200px;
     margin:auto;
 }
 .section-title{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:50px;
 }
 .section-title h2{
-    font-size:30px;
+    font-size:32px;
+    color:#22c55e;
 }
+
+/* CARDS */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+    gap:30px;
 }
 .card{
     background:#020617;
     border:1px solid #1e293b;
-    padding:25px;
-    border-radius:10px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 25px rgba(34,197,94,0.08);
 }
 .card h3{
     color:#22c55e;
-    margin-bottom:10px;
+    margin-bottom:12px;
 }
 .card p{
-    font-size:15px;
+    font-size:14px;
     color:#cbd5e1;
 }
+
+/* SEO BOX */
 .seo-box{
     background:#020617;
     border-left:4px solid #22c55e;
-    padding:25px;
-    margin-bottom:25px;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:8px;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+}
+.contact a{
+    display:inline-block;
+    margin-top:20px;
+    padding:14px 30px;
+    background:#22c55e;
+    color:#020617;
+    font-weight:bold;
+    text-decoration:none;
     border-radius:6px;
 }
+
+/* FOOTER */
 footer{
     background:#020617;
-    text-align:center;
+    border-top:1px solid #1e293b;
     padding:30px 15px;
+    text-align:center;
     font-size:14px;
-    color:#94a3b8;
+    color:#9ca3af;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 20px rgba(37,211,102,0.6);
+    z-index:999;
 }
 </style>
 </head>
@@ -90,115 +159,64 @@ footer{
 <body>
 
 <header>
-    <h1>Profesyonel Hacker Kiralama & Dijital Güvenlik Hizmetleri</h1>
-    <p>
-        Etik siber güvenlik, hesap koruma ve dijital analiz alanında uzman ekibimizle
-        bireysel ve kurumsal çözümler sunuyoruz.
-    </p>
-    <a class="btn" href="https://wa.me/905465920064" target="_blank">WhatsApp İletişim</a>
+    <div class="logo">HACKER KİRALAMA</div>
+    <nav>
+        <a href="#about">Hakkımızda</a>
+        <a href="#services">Hizmetlerimiz</a>
+        <a href="#contact">Bize Ulaşın</a>
+    </nav>
 </header>
 
-<section>
-    <div class="section-title">
-        <h2>Hizmetlerimiz</h2>
-    </div>
+<div class="hero">
+    <h1>Profesyonel Hacker Kiralama Hizmetleri</h1>
+    <p>
+        Etik siber güvenlik, hesap koruma ve dijital analiz alanında
+        profesyonel çözümler sunan uzman ekip.
+    </p>
+    <a href="https://wa.me/905465920064" target="_blank">WhatsApp'tan İletişime Geç</a>
+</div>
 
+<section id="about">
+    <div class="section-title"><h2>Hakkımızda</h2></div>
+    <p style="text-align:center;max-width:900px;margin:auto;color:#cbd5e1">
+        Dijital dünyada güvenlik, gizlilik ve analiz odaklı çözümler sunan
+        profesyonel bir siber güvenlik ekibiyiz. Etik ilkeler çerçevesinde
+        danışmanlık ve analiz hizmetleri sağlıyoruz.
+    </p>
+</section>
+
+<section id="services">
+    <div class="section-title"><h2>Hizmetlerimiz</h2></div>
     <div class="grid">
-        <div class="card">
-            <h3>Telefon Güvenliği & Yetkili Dijital Analiz</h3>
-            <p>
-                Mobil cihazlarda oluşabilecek güvenlik açıkları ve yetkisiz erişim riskleri
-                etik siber güvenlik kapsamında analiz edilir ve raporlanır.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>WhatsApp Güvenliği & Hesap Koruma</h3>
-            <p>
-                WhatsApp hesaplarında oluşabilecek klonlama, ele geçirilme ve güvenlik zafiyetleri
-                profesyonel analizlerle tespit edilir.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Hesap Güvenliği & Kurtarma Danışmanlığı</h3>
-            <p>
-                Sosyal medya ve dijital platform hesapları için parola güvenliği,
-                erişim kontrolü ve resmî kurtarma süreçleri yönetilir.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Fake Hesap & Dijital Kimlik İnceleme</h3>
-            <p>
-                Sahte hesaplar ve taklit profiller açık kaynak analizleriyle
-                tespit edilerek raporlanır.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Hesap Kapatma & Resmî Süreç Yönetimi</h3>
-            <p>
-                Platform kurallarına uygun şekilde hesap kapatma ve geri alma
-                başvuruları profesyonel olarak yürütülür.
-            </p>
-        </div>
+        <div class="card"><h3>Telefon Güvenliği Analizi</h3><p>Mobil cihazlarda güvenlik açıklarının tespiti ve raporlanması.</p></div>
+        <div class="card"><h3>WhatsApp Hesap Güvenliği</h3><p>Yetkisiz erişim ve güvenlik risklerinin analizi.</p></div>
+        <div class="card"><h3>Hesap Kurtarma Danışmanlığı</h3><p>Sosyal medya ve platform hesapları için resmî süreç yönetimi.</p></div>
+        <div class="card"><h3>Fake Hesap İnceleme</h3><p>Sahte ve taklit hesapların OSINT analizleri.</p></div>
+        <div class="card"><h3>Hesap Kapatma Süreçleri</h3><p>Platform kurallarına uygun başvuru ve raporlama.</p></div>
     </div>
 </section>
 
 <section>
-    <div class="section-title">
-        <h2>Bilgilendirici SEO İçerikleri</h2>
-    </div>
+    <div class="section-title"><h2>Bilgilendirici SEO İçerikleri</h2></div>
 
-    <div class="seo-box">
-        <h3>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h3>
-        <p>
-            Türkiye genelinde sunulan hacker kiralama hizmetleri, etik siber güvenlik
-            prensipleri doğrultusunda değerlendirilmelidir. Güvenilir hizmet sağlayıcılar,
-            yasal çerçevede analiz, danışmanlık ve hesap güvenliği çözümleri sunar.
-        </p>
-    </div>
+    <div class="seo-box"><h3>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h3><p>Güvenilir hacker kiralama hizmetleri etik ve yasal çerçevede sunulmalıdır.</p></div>
+    <div class="seo-box"><h3>Kiralık hacker mı arıyorsunuz?</h3><p>Profesyonel ve gizlilik odaklı dijital danışmanlık çözümleri sunuyoruz.</p></div>
+    <div class="seo-box"><h3>Kiralık hacker iletişim</h3><p>Şeffaf ve güvenli iletişim kanalları ile destek sağlıyoruz.</p></div>
+    <div class="seo-box"><h3>Telefon takip uzaktan telefon erişimi</h3><p>Telefon güvenliği analizleri izinli ve hukuki çerçevede değerlendirilir.</p></div>
+    <div class="seo-box"><h3>WhatsApp yazışma dökümü için hacker arıyorum</h3><p>WhatsApp güvenliği danışmanlık kapsamında ele alınır.</p></div>
+</section>
 
-    <div class="seo-box">
-        <h3>Kiralık hacker mı arıyorsunuz?</h3>
-        <p>
-            Kiralık hacker arayan kullanıcılar için en önemli kriter; gizlilik,
-            profesyonellik ve yasal uyumluluktur. Yetkili dijital analiz ve güvenlik
-            danışmanlığı bu süreçte kritik rol oynar.
-        </p>
-    </div>
-
-    <div class="seo-box">
-        <h3>Kiralık hacker iletişim</h3>
-        <p>
-            Hacker kiralama hizmetleri hakkında doğru bilgi almak ve güvenli iletişim
-            kurmak için doğrudan, şeffaf ve kayıtlı iletişim kanalları tercih edilmelidir.
-        </p>
-    </div>
-
-    <div class="seo-box">
-        <h3>Telefon takip uzaktan telefon erişimi</h3>
-        <p>
-            Uzaktan telefon erişimi ve takip konuları, yalnızca izinli ve hukuki
-            çerçevede ele alınmalıdır. Telefon güvenliği analizleri bu kapsamda
-            değerlendirilir.
-        </p>
-    </div>
-
-    <div class="seo-box">
-        <h3>WhatsApp yazışma dökümü için hacker arıyorum</h3>
-        <p>
-            WhatsApp yazışmalarıyla ilgili talepler, veri güvenliği ve gizlilik
-            esaslarına uygun şekilde ele alınmalıdır. Hesap güvenliği ve yetkisiz
-            erişim tespitleri danışmanlık kapsamında sunulur.
-        </p>
-    </div>
+<section id="contact" class="contact">
+    <div class="section-title"><h2>Bize Ulaşın</h2></div>
+    <p>Profesyonel destek almak için bizimle iletişime geçin.</p>
+    <a href="https://wa.me/905465920064" target="_blank">WhatsApp İletişim</a>
 </section>
 
 <footer>
-    © 2025 | Dijital Güvenlik & Etik Siber Hizmetler  
+    Profesyonel Kiralık Hacker Hizmetleri. Hacker arıyorum diyorsanız bize ulaşabilirsiniz. WhatsApp: +90 546 592 0064
 </footer>
+
+<a class="whatsapp" href="https://wa.me/905465920064" target="_blank">WhatsApp</a>
 
 </body>
 </html>
