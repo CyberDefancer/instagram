@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Kiralık Hacker | Hacker Kiralama Hizmetleri</title>
+
 <meta name="description" content="Kiralık hacker, hacker kiralama, dijital güvenlik ve analiz hizmetleri.">
 <meta name="keywords" content="kiralık hacker, hacker kiralama, hacker arıyorum, kiralık hacker iletişim">
 
@@ -18,47 +18,48 @@ body{
     overflow-x:hidden;
 }
 
-/* MATRIX */
+/* MATRIX BACKGROUND */
 canvas{
     position:fixed;
-    top:0;left:0;
+    inset:0;
     z-index:-1;
 }
 
 /* HEADER */
 header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(2,6,23,.9);
+    backdrop-filter:blur(6px);
     padding:20px 40px;
     display:flex;
     justify-content:space-between;
     align-items:center;
     border-bottom:1px solid #134e4a;
-    background:rgba(2,6,23,.85);
-    backdrop-filter:blur(6px);
 }
 .logo{
-    font-size:22px;
-    font-weight:bold;
     color:#22c55e;
+    font-weight:bold;
     letter-spacing:3px;
-    position:relative;
 }
 .logo::after{
-    content:'_';
+    content:"_";
     animation:blink 1s infinite;
 }
 @keyframes blink{50%{opacity:0}}
 
 nav a{
     color:#9ca3af;
-    margin-left:20px;
     text-decoration:none;
+    margin-left:20px;
 }
 nav a:hover{color:#22c55e}
 
 /* HERO */
 .hero{
-    padding:120px 20px;
     text-align:center;
+    padding:120px 20px;
 }
 .glitch{
     font-size:44px;
@@ -70,26 +71,18 @@ nav a:hover{color:#22c55e}
     position:absolute;
     left:0;
 }
-.glitch::before{
-    color:#22d3ee;
-    animation:glitch 2s infinite;
-}
-.glitch::after{
-    color:#16a34a;
-    animation:glitch 1.5s infinite reverse;
-}
-@keyframes glitch{
-    0%{clip-path:inset(0 0 90% 0)}
-    50%{clip-path:inset(40% 0 20% 0)}
-    100%{clip-path:inset(80% 0 0 0)}
-}
+.glitch::before{color:#22d3ee;animation:g1 2s infinite}
+.glitch::after{color:#16a34a;animation:g2 1.5s infinite}
+@keyframes g1{0%{clip-path:inset(0 0 90% 0)}50%{clip-path:inset(40% 0 20% 0)}}
+@keyframes g2{0%{clip-path:inset(80% 0 0 0)}50%{clip-path:inset(10% 0 60% 0)}}
 
 .hero p{
     max-width:800px;
-    margin:30px auto;
+    margin:25px auto;
     color:#cbd5f5;
 }
 .hero a{
+    display:inline-block;
     padding:15px 35px;
     background:#16a34a;
     color:#fff;
@@ -106,14 +99,14 @@ section{
 }
 .section-title{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:45px;
 }
 .section-title h2{
     color:#22c55e;
     font-size:32px;
 }
 
-/* CARDS */
+/* GRID */
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -124,12 +117,12 @@ section{
     border:1px solid #1e293b;
     padding:30px;
     border-radius:12px;
-    box-shadow:0 0 30px rgba(34,197,94,0.12);
+    box-shadow:0 0 25px rgba(34,197,94,.15);
 }
 .card h3{color:#22c55e}
 .card p{color:#cbd5e1;font-size:14px}
 
-/* SEO */
+/* SEO BOX */
 .seo-box{
     background:rgba(2,6,23,.9);
     border-left:4px solid #22c55e;
@@ -144,9 +137,9 @@ section{
     padding:15px 35px;
     background:#22c55e;
     color:#020617;
-    text-decoration:none;
-    border-radius:6px;
     font-weight:bold;
+    border-radius:6px;
+    text-decoration:none;
 }
 
 /* FOOTER */
@@ -166,9 +159,10 @@ footer{
     color:#fff;
     padding:15px 22px;
     border-radius:50px;
-    font-weight:bold;
     text-decoration:none;
+    font-weight:bold;
     box-shadow:0 0 25px rgba(37,211,102,.7);
+    z-index:100;
 }
 </style>
 </head>
@@ -197,7 +191,41 @@ footer{
     <a href="https://wa.me/905465920064" target="_blank">WhatsApp'tan İletişime Geç</a>
 </div>
 
-<!-- İÇERİK BÖLÜMLERİ DEĞİŞMEDİ – AYNEN KALDI -->
+<section id="about">
+    <div class="section-title"><h2>Hakkımızda</h2></div>
+    <p style="text-align:center;max-width:900px;margin:auto;color:#cbd5e1">
+        Dijital dünyada güvenlik, gizlilik ve analiz odaklı çözümler sunan
+        profesyonel bir siber güvenlik ekibiyiz. Etik ilkeler çerçevesinde
+        danışmanlık ve analiz hizmetleri sağlıyoruz.
+    </p>
+</section>
+
+<section id="services">
+    <div class="section-title"><h2>Hizmetlerimiz</h2></div>
+    <div class="grid">
+        <div class="card"><h3>Telefon Güvenliği Analizi</h3><p>Mobil cihazlarda güvenlik açıklarının tespiti ve raporlanması.</p></div>
+        <div class="card"><h3>WhatsApp Hesap Güvenliği</h3><p>Yetkisiz erişim ve güvenlik risklerinin analizi.</p></div>
+        <div class="card"><h3>Hesap Kurtarma Danışmanlığı</h3><p>Sosyal medya ve platform hesapları için resmî süreç yönetimi.</p></div>
+        <div class="card"><h3>Fake Hesap İnceleme</h3><p>Sahte ve taklit hesapların OSINT analizleri.</p></div>
+        <div class="card"><h3>Hesap Kapatma Süreçleri</h3><p>Platform kurallarına uygun başvuru ve raporlama.</p></div>
+    </div>
+</section>
+
+<section>
+    <div class="section-title"><h2>Bilgilendirici SEO İçerikleri</h2></div>
+
+    <div class="seo-box"><h3>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h3><p>Güvenilir hacker kiralama hizmetleri etik ve yasal çerçevede sunulmalıdır.</p></div>
+    <div class="seo-box"><h3>Kiralık hacker mı arıyorsunuz?</h3><p>Profesyonel ve gizlilik odaklı dijital danışmanlık çözümleri sunuyoruz.</p></div>
+    <div class="seo-box"><h3>Kiralık hacker iletişim</h3><p>Şeffaf ve güvenli iletişim kanalları ile destek sağlıyoruz.</p></div>
+    <div class="seo-box"><h3>Telefon takip uzaktan telefon erişimi</h3><p>Telefon güvenliği analizleri izinli ve hukuki çerçevede değerlendirilir.</p></div>
+    <div class="seo-box"><h3>WhatsApp yazışma dökümü için hacker arıyorum</h3><p>WhatsApp güvenliği danışmanlık kapsamında ele alınır.</p></div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="section-title"><h2>Bize Ulaşın</h2></div>
+    <p>Profesyonel destek almak için bizimle iletişime geçin.</p>
+    <a href="https://wa.me/905465920064" target="_blank">WhatsApp İletişim</a>
+</section>
 
 <footer>
     Profesyonel Kiralık Hacker Hizmetleri. Hacker arıyorum diyorsanız bize ulaşabilirsiniz. WhatsApp: +90 546 592 0064
@@ -206,28 +234,26 @@ footer{
 <a class="whatsapp" href="https://wa.me/905465920064" target="_blank">WhatsApp</a>
 
 <script>
-const canvas=document.getElementById("matrix");
-const ctx=canvas.getContext("2d");
-canvas.width=window.innerWidth;
-canvas.height=window.innerHeight;
+const c=document.getElementById("matrix");
+const ctx=c.getContext("2d");
+c.width=innerWidth;c.height=innerHeight;
 const letters="01HACKER";
-const fontSize=14;
-const columns=canvas.width/fontSize;
-const drops=Array.from({length:columns}).fill(1);
+const size=14;
+const cols=c.width/size;
+const drops=Array.from({length:cols}).fill(1);
 
-function draw(){
-    ctx.fillStyle="rgba(2,6,23,0.05)";
-    ctx.fillRect(0,0,canvas.width,canvas.height);
-    ctx.fillStyle="#22c55e";
-    ctx.font=fontSize+"px monospace";
-    drops.forEach((y,i)=>{
-        const text=letters[Math.floor(Math.random()*letters.length)];
-        ctx.fillText(text,i*fontSize,y*fontSize);
-        if(y*fontSize>canvas.height && Math.random()>0.975) drops[i]=0;
-        drops[i]++;
-    });
-}
-setInterval(draw,33);
+setInterval(()=>{
+ctx.fillStyle="rgba(2,6,23,0.05)";
+ctx.fillRect(0,0,c.width,c.height);
+ctx.fillStyle="#22c55e";
+ctx.font=size+"px monospace";
+drops.forEach((y,i)=>{
+const t=letters[Math.floor(Math.random()*letters.length)];
+ctx.fillText(t,i*size,y*size);
+if(y*size>c.height&&Math.random()>0.975)drops[i]=0;
+drops[i]++;
+});
+},33);
 </script>
 
 </body>
