@@ -7,102 +7,159 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+:root{
+  --green:#22c55e;
+  --bg:#050508;
+  --panel:#0a0a10;
+  --border:#22c55e33;
+  --text:#cbd5f5;
+  --muted:#94a3b8;
+}
+
 *{margin:0;padding:0;box-sizing:border-box;font-family:monospace}
 body{
-  background:#050508;
-  color:#e5e7eb;
+  background:radial-gradient(circle at top,#0b0b12,#020205);
+  color:var(--text);
   overflow-x:hidden;
 }
-a{text-decoration:none;color:#22c55e}
 
+/* HEADER */
 header{
-  position:fixed;top:0;left:0;width:100%;
-  padding:15px 30px;
-  display:flex;justify-content:space-between;align-items:center;
-  background:rgba(5,5,8,.95);
-  border-bottom:1px solid #22c55e33;
-  z-index:1000
+  position:fixed;
+  top:0;left:0;width:100%;
+  padding:14px 22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(5,5,8,.92);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--border);
+  z-index:1000;
 }
-.logo{color:#22c55e;font-size:22px;font-weight:bold}
-nav a{margin-left:20px;color:#cbd5f5}
+.logo{
+  color:var(--green);
+  font-size:20px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+nav{
+  display:flex;
+  gap:16px;
+}
+nav a{
+  color:var(--text);
+  font-size:14px;
+}
 
+/* MOBILE MENU */
+@media(max-width:768px){
+  nav{display:none}
+}
+
+/* SECTIONS */
 section{
-  padding:100px 30px;
+  padding:90px 20px;
   max-width:1200px;
-  margin:auto
+  margin:auto;
 }
-h1,h2,h3{color:#22c55e;margin-bottom:20px}
-p{line-height:1.7;margin-bottom:15px;color:#cbd5f5}
+h1,h2,h3{
+  color:var(--green);
+  margin-bottom:16px;
+}
+p{
+  line-height:1.8;
+  margin-bottom:14px;
+  color:var(--text);
+}
 
-/* Cards */
+/* GRID */
 .grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px
-}
-.card{
-  background:linear-gradient(180deg,#07070c,#020205);
-  border:1px solid #22c55e22;
-  padding:20px;
-  border-radius:10px;
-  box-shadow:0 0 25px rgba(0,0,0,.6)
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:18px;
 }
 
-/* Reviews */
+/* CARDS */
+.card{
+  background:linear-gradient(180deg,#0b0b12,#040407);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px;
+  box-shadow:0 0 30px rgba(0,0,0,.6);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 0 45px rgba(34,197,94,.15);
+}
+
+/* REVIEWS */
 .review{
   font-style:italic;
-  color:#94a3b8
+  color:var(--muted);
 }
 .review span{
   display:block;
   margin-top:10px;
-  color:#22c55e;
-  font-style:normal
+  color:var(--green);
+  font-style:normal;
 }
 
-/* Footer */
+/* FOOTER */
 footer{
   background:#020205;
-  border-top:1px solid #22c55e33;
-  padding:30px;
+  border-top:1px solid var(--border);
+  padding:28px 18px;
   text-align:center;
-  color:#94a3b8
+  color:var(--muted);
+  font-size:14px;
 }
 
-/* WhatsApp */
+/* WHATSAPP */
 .whatsapp{
   position:fixed;
-  bottom:20px;
-  right:20px;
+  right:18px;
+  bottom:18px;
   background:#25D366;
   color:#fff;
-  padding:15px 18px;
+  padding:14px 16px;
   border-radius:50%;
   font-size:22px;
   z-index:999;
-  box-shadow:0 0 15px #25D366aa
+  box-shadow:0 0 25px #25D366aa;
 }
 
-/* Login Screen */
+/* LOGIN */
 #login{
   position:fixed;
-  top:0;left:0;
-  width:100%;height:100%;
+  inset:0;
   background:#020205;
   display:flex;
   align-items:center;
   justify-content:center;
-  z-index:2000;
-  color:#22c55e
+  z-index:3000;
 }
 .login-box{
-  border:1px solid #22c55e55;
-  padding:40px;
+  background:linear-gradient(180deg,#0b0b12,#020205);
+  border:1px solid var(--border);
+  padding:36px 32px;
+  border-radius:16px;
   text-align:center;
-  background:#050508;
-  box-shadow:0 0 30px #000
+  box-shadow:0 0 60px rgba(0,0,0,.9);
 }
-.login-box p{margin-top:15px;color:#94a3b8}
+.login-box p{
+  margin-top:14px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* MOBILE OPTIMIZATION */
+@media(max-width:480px){
+  h1{font-size:22px}
+  h2{font-size:18px}
+  .logo{font-size:18px}
+  section{padding:80px 16px}
+}
 </style>
 </head>
 
@@ -126,7 +183,7 @@ footer{
   </nav>
 </header>
 
-<!-- SEO CONTENT (AYNEN DURUYOR) -->
+<!-- SEO İÇERİKLER (AYNEN) -->
 <section id="about">
 <h1>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h1>
 <p>Kiralık hacker hizmetleri alanında gizlilik, hız ve güven esasına dayalı profesyonel çözümler sunuyoruz.</p>
@@ -144,13 +201,11 @@ footer{
 <p>WhatsApp yazışma dökümü ve veri analiz hizmetlerinde güvenilir çözümler.</p>
 </section>
 
-<!-- HAKKIMIZDA -->
 <section>
 <h2>Hakkımızda</h2>
 <p>Alanında uzman teknik ekibimizle, gizlilik ve güvenlik esaslarına bağlı kalarak profesyonel hacker kiralama hizmetleri sunuyoruz. Amacımız hızlı, etkili ve sonuç odaklı çözümler üretmektir.</p>
 </section>
 
-<!-- HİZMETLER -->
 <section id="services">
 <h2>Hizmetlerimiz</h2>
 <div class="grid">
@@ -162,7 +217,6 @@ footer{
 </div>
 </section>
 
-<!-- YORUMLAR -->
 <section id="reviews">
 <h2>Müşterilerimizden Olumlu Yorumlar</h2>
 <div class="grid">
@@ -172,7 +226,6 @@ footer{
 </div>
 </section>
 
-<!-- İLETİŞİM -->
 <section id="contact">
 <h2>Bize Ulaşın</h2>
 <p>WhatsApp üzerinden 7/24 profesyonel destek alabilirsiniz.</p>
