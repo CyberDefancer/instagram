@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Profesyonel Etik Hacker | Siber Güvenlik & Penetrasyon Testi</title>
+<title>Profesyonel Etik Hacker | Siber Güvenlik & Dijital Analiz</title>
 
-<meta name="description" content="Profesyonel etik hacker hizmetleri, siber güvenlik çözümleri, penetrasyon testi, zafiyet analizi ve KVKK uyumluluğu.">
-<meta name="keywords" content="etik hacker, siber güvenlik, penetrasyon testi, zafiyet analizi, hacker hizmetleri">
+<meta name="description" content="Etik hacker hizmetleri, telefon ve WhatsApp güvenliği, hesap koruma, fake hesap tespiti ve dijital güvenlik çözümleri.">
+<meta name="keywords" content="etik hacker, siber güvenlik, whatsapp güvenliği, telefon güvenliği, fake hesap tespiti, hesap kurtarma">
 <meta name="author" content="CyberGuard">
 
 <style>
@@ -15,9 +15,8 @@
   --bg:#070b0f;
   --accent:#00ff9c;
   --muted:#8fa3ad;
-  --glass:rgba(255,255,255,.04);
   --container:1150px;
-  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;
 }
 *{box-sizing:border-box}
 body{
@@ -28,7 +27,6 @@ body{
     var(--bg);
   color:#e9f1f6;
 }
-a{color:inherit}
 .container{max-width:var(--container);margin:auto;padding:30px}
 header{
   position:sticky;top:0;z-index:999;
@@ -36,21 +34,10 @@ header{
   background:linear-gradient(180deg,rgba(0,0,0,.6),transparent);
   border-bottom:1px solid rgba(255,255,255,.06)
 }
-header .container{
-  display:flex;justify-content:space-between;align-items:center
-}
-.brand{
-  font-size:20px;
-  font-weight:900;
-  letter-spacing:3px
-}
+header .container{display:flex;justify-content:space-between;align-items:center}
+.brand{font-size:20px;font-weight:900;letter-spacing:3px}
 .brand span{color:var(--accent)}
-nav a{
-  margin-left:18px;
-  color:var(--muted);
-  text-decoration:none;
-  font-weight:500
-}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none}
 nav a.cta{
   padding:8px 14px;
   border:1px solid rgba(0,255,156,.4);
@@ -58,28 +45,17 @@ nav a.cta{
   color:var(--accent)
 }
 .hero{padding:90px 0}
-.hero-inner{
-  display:flex;
-  gap:40px;
-  align-items:center
-}
-.hero h1{
-  font-size:42px;
-  line-height:1.1;
-  margin-bottom:14px
-}
-.hero p{
-  color:var(--muted);
-  max-width:650px
-}
+.hero-inner{display:flex;gap:40px;align-items:center}
+.hero h1{font-size:42px;line-height:1.1;margin-bottom:14px}
+.hero p{color:var(--muted);max-width:650px}
 .btn{
   display:inline-block;
   margin-top:16px;
   padding:14px 22px;
   border-radius:12px;
   border:1px solid rgba(0,255,156,.4);
-  text-decoration:none;
   color:var(--accent);
+  text-decoration:none;
   font-weight:600
 }
 .code-box{
@@ -88,18 +64,10 @@ nav a.cta{
   padding:22px;
   border-radius:14px;
   min-width:320px;
-  color:#00ff9c;
-  box-shadow:0 0 40px rgba(0,255,156,.08)
+  color:#00ff9c
 }
-section h2{
-  margin-bottom:20px;
-  font-size:30px
-}
-.grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px
-}
+section h2{margin-bottom:20px;font-size:30px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .card{
   background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.01));
   border:1px solid rgba(255,255,255,.06);
@@ -107,33 +75,11 @@ section h2{
   padding:22px
 }
 .card h3{color:var(--accent)}
-.pricing .card{text-align:center}
-.price{
-  font-size:26px;
-  font-weight:800;
-  margin-top:10px
-}
-.blog .card p{color:var(--muted)}
-.contact-form{
-  max-width:720px;
-  display:grid;
-  gap:12px
-}
-input,textarea{
-  width:100%;
-  padding:12px;
-  border-radius:10px;
-  background:transparent;
-  border:1px solid rgba(255,255,255,.1);
-  color:#fff
-}
 footer{
   border-top:1px solid rgba(255,255,255,.06);
   margin-top:60px;
   color:var(--muted)
 }
-
-/* WhatsApp Button */
 .whatsapp{
   position:fixed;
   right:20px;
@@ -147,8 +93,6 @@ footer{
   box-shadow:0 0 30px rgba(0,255,156,.6);
   z-index:9999
 }
-
-/* Responsive */
 @media(max-width:900px){
   .hero-inner{flex-direction:column}
   .grid{grid-template-columns:1fr}
@@ -164,8 +108,6 @@ footer{
     <div class="brand">CYBER<span>GUARD</span></div>
     <nav>
       <a href="#services">Hizmetler</a>
-      <a href="#pricing">Paketler</a>
-      <a href="#blog">Blog</a>
       <a href="#contact" class="cta">İletişim</a>
     </nav>
   </div>
@@ -174,46 +116,67 @@ footer{
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <h1>Profesyonel Etik Hacker<br>Siber Güvenlik Çözümleri</h1>
+      <h1>Etik Hacker & Dijital<br>Güvenlik Hizmetleri</h1>
       <p>
-        Kurumlar ve bireyler için yasal, sözleşmeli ve etik siber güvenlik hizmetleri.
-        Sistemlerinizi saldırılara karşı test eder, güçlendiririz.
+        Telefon, WhatsApp ve dijital hesaplar için yetkili, sözleşmeli ve
+        etik siber güvenlik çözümleri sunuyoruz.
       </p>
       <a href="#contact" class="btn">Ücretsiz Ön Analiz</a>
     </div>
-    <pre class="code-box">root@cyberguard:~$ pentest --deep target.com</pre>
+    <pre class="code-box">root@cyberguard:~$ security_audit --full</pre>
   </div>
 </section>
 
+<!-- HİZMETLER -->
 <section id="services">
   <div class="container">
-    <h2>Hizmetler</h2>
+    <h2>Hizmetlerimiz</h2>
     <div class="grid">
-      <div class="card"><h3>Penetrasyon Testi</h3><p>Sistem, ağ ve web uygulamaları için ileri seviye testler.</p></div>
-      <div class="card"><h3>Zafiyet Analizi</h3><p>Kritik açıkların tespiti ve raporlanması.</p></div>
-      <div class="card"><h3>KVKK & ISO 27001</h3><p>Uyumluluk danışmanlığı ve denetimler.</p></div>
-    </div>
-  </div>
-</section>
 
-<section id="pricing" class="pricing">
-  <div class="container">
-    <h2>Paketler</h2>
-    <div class="grid">
-      <div class="card"><h3>Başlangıç</h3><div class="price">₺2.500</div></div>
-      <div class="card"><h3>Profesyonel</h3><div class="price">₺6.500</div></div>
-      <div class="card"><h3>Kurumsal</h3><div class="price">Teklif Al</div></div>
-    </div>
-  </div>
-</section>
+      <div class="card">
+        <h3>Telefon Güvenliği & Dijital Analiz</h3>
+        <p>
+          Mobil cihazlar için yetkili dijital güvenlik analizleri sunuyoruz.
+          Telefonlarda oluşabilecek veri sızıntıları, güvenlik açıkları ve
+          yetkisiz erişim riskleri detaylı şekilde raporlanır.
+        </p>
+      </div>
 
-<section id="blog" class="blog">
-  <div class="container">
-    <h2>Blog</h2>
-    <div class="grid">
-      <div class="card"><h3>Siber Güvenlik Nedir?</h3><p>Günümüzde dijital güvenliğin önemi.</p></div>
-      <div class="card"><h3>Penetrasyon Testi Nasıl Yapılır?</h3><p>Etik hacker süreçleri.</p></div>
-      <div class="card"><h3>KVKK Uyumu</h3><p>Firmalar neden dikkat etmeli?</p></div>
+      <div class="card">
+        <h3>WhatsApp Güvenliği & Hesap Koruma</h3>
+        <p>
+          WhatsApp hesaplarında oluşabilecek klonlama, ele geçirilme ve
+          güvenlik zafiyetleri analiz edilir. Hesap güvenliğini artırmaya
+          yönelik önleyici çözümler sunulur.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Hesap Güvenliği & Kurtarma Danışmanlığı</h3>
+        <p>
+          Sosyal medya ve dijital platform hesapları için resmî kurtarma
+          süreçlerine uygun danışmanlık sağlanır. Parola güvenliği ve
+          erişim riskleri profesyonel olarak değerlendirilir.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Fake Hesap & Dijital Kimlik Tespiti</h3>
+        <p>
+          Sahte hesaplar ve taklit profiller için OSINT temelli dijital
+          analiz yapılır. Fake hesaplar raporlanır ve platform politikalarına
+          uygun şekilde işlem yapılır.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Hesap Kapatma & Resmî Kurtarma Süreçleri</h3>
+        <p>
+          Sosyal medya platformlarında yaşanan hesap ihlalleri için resmî
+          başvuru, kapatma ve kurtarma süreçleri profesyonel olarak yönetilir.
+        </p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -221,10 +184,10 @@ footer{
 <section id="contact">
   <div class="container">
     <h2>İletişim</h2>
-    <form class="contact-form">
-      <input type="text" placeholder="Ad Soyad">
-      <input type="email" placeholder="E-posta">
-      <textarea rows="4" placeholder="Mesajınız"></textarea>
+    <form>
+      <input type="text" placeholder="Ad Soyad"><br><br>
+      <input type="email" placeholder="E-posta"><br><br>
+      <textarea rows="4" placeholder="Mesajınız"></textarea><br><br>
       <button class="btn">Gönder</button>
     </form>
   </div>
@@ -232,7 +195,7 @@ footer{
 
 <footer>
   <div class="container">
-    © <span id="y"></span> CyberGuard — Etik Siber Güvenlik
+    © <span id="y"></span> CyberGuard — Etik Dijital Güvenlik
   </div>
 </footer>
 
@@ -245,4 +208,4 @@ document.getElementById("y").textContent=new Date().getFullYear();
 </script>
 
 </body>
-  </html>
+</html>
