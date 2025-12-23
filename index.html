@@ -4,256 +4,234 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kiralık Hacker | Hacker Kiralama Hizmetleri</title>
-
 <meta name="description" content="Kiralık hacker, hacker kiralama, dijital güvenlik ve analiz hizmetleri.">
 <meta name="keywords" content="kiralık hacker, hacker kiralama, hacker arıyorum, kiralık hacker iletişim">
 
 <style>
 *{box-sizing:border-box}
 body{
-    margin:0;
-    font-family:'Courier New', monospace;
-    background:#020617;
-    color:#e5e7eb;
-    overflow-x:hidden;
+  margin:0;font-family:'Courier New',monospace;background:#020617;color:#e5e7eb;overflow-x:hidden
 }
-
-/* MATRIX BACKGROUND */
-canvas{
-    position:fixed;
-    inset:0;
-    z-index:-1;
-}
+/* MATRIX */
+canvas{position:fixed;inset:0;z-index:-2}
 
 /* HEADER */
-header{
-    position:sticky;
-    top:0;
-    z-index:50;
-    background:rgba(2,6,23,.9);
-    backdrop-filter:blur(6px);
-    padding:20px 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    border-bottom:1px solid #134e4a;
-}
-.logo{
-    color:#22c55e;
-    font-weight:bold;
-    letter-spacing:3px;
-}
-.logo::after{
-    content:"_";
-    animation:blink 1s infinite;
-}
+header{position:sticky;top:0;z-index:50;background:rgba(2,6,23,.9);backdrop-filter:blur(6px);
+  padding:20px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #134e4a}
+.logo{color:#22c55e;font-weight:bold;letter-spacing:3px}
+.logo::after{content:"_";animation:blink 1s infinite}
 @keyframes blink{50%{opacity:0}}
-
-nav a{
-    color:#9ca3af;
-    text-decoration:none;
-    margin-left:20px;
-}
+nav a{color:#9ca3af;text-decoration:none;margin-left:20px}
 nav a:hover{color:#22c55e}
 
 /* HERO */
-.hero{
-    text-align:center;
-    padding:120px 20px;
-}
-.glitch{
-    font-size:44px;
-    color:#22c55e;
-    position:relative;
-}
-.glitch::before,.glitch::after{
-    content:attr(data-text);
-    position:absolute;
-    left:0;
-}
+.hero{text-align:center;padding:120px 20px}
+.glitch{font-size:44px;color:#22c55e;position:relative}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0}
 .glitch::before{color:#22d3ee;animation:g1 2s infinite}
 .glitch::after{color:#16a34a;animation:g2 1.5s infinite}
 @keyframes g1{0%{clip-path:inset(0 0 90% 0)}50%{clip-path:inset(40% 0 20% 0)}}
 @keyframes g2{0%{clip-path:inset(80% 0 0 0)}50%{clip-path:inset(10% 0 60% 0)}}
-
-.hero p{
-    max-width:800px;
-    margin:25px auto;
-    color:#cbd5f5;
-}
-.hero a{
-    display:inline-block;
-    padding:15px 35px;
-    background:#16a34a;
-    color:#fff;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:bold;
-}
+.hero p{max-width:800px;margin:25px auto;color:#cbd5f5}
+.hero a{display:inline-block;padding:15px 35px;background:#16a34a;color:#fff;text-decoration:none;border-radius:6px;font-weight:bold}
 
 /* SECTIONS */
-section{
-    padding:80px 20px;
-    max-width:1200px;
-    margin:auto;
-}
-.section-title{
-    text-align:center;
-    margin-bottom:45px;
-}
-.section-title h2{
-    color:#22c55e;
-    font-size:32px;
-}
+section{padding:80px 20px;max-width:1200px;margin:auto}
+.section-title{text-align:center;margin-bottom:45px}
+.section-title h2{color:#22c55e;font-size:32px}
 
 /* GRID */
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
-.card{
-    background:rgba(2,6,23,.9);
-    border:1px solid #1e293b;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 0 25px rgba(34,197,94,.15);
-}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
+.card{background:rgba(2,6,23,.9);border:1px solid #1e293b;padding:30px;border-radius:12px;
+  box-shadow:0 0 25px rgba(34,197,94,.15)}
 .card h3{color:#22c55e}
 .card p{color:#cbd5e1;font-size:14px}
 
-/* SEO BOX */
-.seo-box{
-    background:rgba(2,6,23,.9);
-    border-left:4px solid #22c55e;
-    padding:30px;
-    margin-bottom:30px;
-    border-radius:8px;
-}
+/* SEO */
+.seo-box{background:rgba(2,6,23,.9);border-left:4px solid #22c55e;padding:30px;margin-bottom:30px;border-radius:8px}
 
 /* CONTACT */
 .contact{text-align:center}
-.contact a{
-    padding:15px 35px;
-    background:#22c55e;
-    color:#020617;
-    font-weight:bold;
-    border-radius:6px;
-    text-decoration:none;
-}
+.contact a{padding:15px 35px;background:#22c55e;color:#020617;font-weight:bold;border-radius:6px;text-decoration:none}
 
 /* FOOTER */
-footer{
-    border-top:1px solid #1e293b;
-    padding:30px;
-    text-align:center;
-    color:#9ca3af;
-}
+footer{border-top:1px solid #1e293b;padding:30px;text-align:center;color:#9ca3af}
 
 /* WHATSAPP */
-.whatsapp{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    background:#25D366;
-    color:#fff;
-    padding:15px 22px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 0 25px rgba(37,211,102,.7);
-    z-index:100;
-}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25D366;color:#fff;padding:15px 22px;
+  border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 0 25px rgba(37,211,102,.7);z-index:100}
+
+/* ====== EXTRA EFFECTS ====== */
+/* Intro Loading */
+#loader{position:fixed;inset:0;background:#020617;z-index:9999;display:flex;align-items:center;justify-content:center}
+#loader .box{border:1px solid #134e4a;padding:30px 40px;color:#22c55e;text-align:left}
+#loader .bar{height:6px;background:#134e4a;margin-top:10px;overflow:hidden}
+#loader .bar span{display:block;height:100%;width:0;background:#22c55e;animation:load 2.2s forwards}
+@keyframes load{to{width:100%}}
+
+/* Terminal Login */
+#login{position:fixed;inset:0;background:rgba(2,6,23,.96);z-index:9998;display:flex;align-items:center;justify-content:center}
+#login .term{width:min(680px,90%);border:1px solid #134e4a;padding:20px}
+#login pre{color:#22c55e;margin:0;font-size:14px}
+#login .hint{color:#9ca3af;font-size:12px;margin-top:8px}
+
+/* Fake Console */
+#console{position:fixed;left:10px;bottom:90px;width:320px;max-height:180px;overflow:hidden;
+  background:rgba(2,6,23,.85);border:1px solid #134e4a;border-radius:8px;padding:10px;z-index:20}
+#console p{margin:0;font-size:11px;color:#9ca3af}
+
+/* Scroll Code */
+#codeflow{position:fixed;right:10px;top:120px;width:260px;max-height:260px;overflow:hidden;
+  background:rgba(2,6,23,.75);border:1px dashed #134e4a;border-radius:8px;padding:10px;z-index:10}
+#codeflow code{font-size:11px;color:#22c55e}
 </style>
 </head>
 
 <body>
 
+<!-- Intro Loading -->
+<div id="loader">
+  <div class="box">
+    <div>Initializing darknet modules…</div>
+    <div class="bar"><span></span></div>
+  </div>
+</div>
+
+<!-- Terminal Login -->
+<div id="login">
+  <div class="term">
+<pre>
+HACKER KİRALAMA :: SECURE TERMINAL
+---------------------------------
+Access level: guest
+Session: encrypted
+Status: awaiting input…
+</pre>
+    <div class="hint">Devam etmek için ENTER</div>
+  </div>
+</div>
+
 <canvas id="matrix"></canvas>
 
 <header>
-    <div class="logo">HACKER KİRALAMA</div>
-    <nav>
-        <a href="#about">Hakkımızda</a>
-        <a href="#services">Hizmetlerimiz</a>
-        <a href="#contact">Bize Ulaşın</a>
-    </nav>
+  <div class="logo">HACKER KİRALAMA</div>
+  <nav>
+    <a href="#about">Hakkımızda</a>
+    <a href="#services">Hizmetlerimiz</a>
+    <a href="#contact">Bize Ulaşın</a>
+  </nav>
 </header>
 
 <div class="hero">
-    <h1 class="glitch" data-text="Profesyonel Hacker Kiralama Hizmetleri">
-        Profesyonel Hacker Kiralama Hizmetleri
-    </h1>
-    <p>
-        Etik siber güvenlik, hesap koruma ve dijital analiz alanında
-        profesyonel çözümler sunan uzman ekip.
-    </p>
-    <a href="https://wa.me/905465920064" target="_blank">WhatsApp'tan İletişime Geç</a>
+  <h1 class="glitch" data-text="Profesyonel Hacker Kiralama Hizmetleri">
+    Profesyonel Hacker Kiralama Hizmetleri
+  </h1>
+  <p>
+    Etik siber güvenlik, hesap koruma ve dijital analiz alanında
+    profesyonel çözümler sunan uzman ekip.
+  </p>
+  <a href="https://wa.me/905465920064" target="_blank">WhatsApp'tan İletişime Geç</a>
 </div>
 
 <section id="about">
-    <div class="section-title"><h2>Hakkımızda</h2></div>
-    <p style="text-align:center;max-width:900px;margin:auto;color:#cbd5e1">
-        Dijital dünyada güvenlik, gizlilik ve analiz odaklı çözümler sunan
-        profesyonel bir siber güvenlik ekibiyiz. Etik ilkeler çerçevesinde
-        danışmanlık ve analiz hizmetleri sağlıyoruz.
-    </p>
+  <div class="section-title"><h2>Hakkımızda</h2></div>
+  <p style="text-align:center;max-width:900px;margin:auto;color:#cbd5e1">
+    Dijital dünyada güvenlik, gizlilik ve analiz odaklı çözümler sunan
+    profesyonel bir siber güvenlik ekibiyiz. Etik ilkeler çerçevesinde
+    danışmanlık ve analiz hizmetleri sağlıyoruz.
+  </p>
 </section>
 
 <section id="services">
-    <div class="section-title"><h2>Hizmetlerimiz</h2></div>
-    <div class="grid">
-        <div class="card"><h3>Telefon Güvenliği Analizi</h3><p>Mobil cihazlarda güvenlik açıklarının tespiti ve raporlanması.</p></div>
-        <div class="card"><h3>WhatsApp Hesap Güvenliği</h3><p>Yetkisiz erişim ve güvenlik risklerinin analizi.</p></div>
-        <div class="card"><h3>Hesap Kurtarma Danışmanlığı</h3><p>Sosyal medya ve platform hesapları için resmî süreç yönetimi.</p></div>
-        <div class="card"><h3>Fake Hesap İnceleme</h3><p>Sahte ve taklit hesapların OSINT analizleri.</p></div>
-        <div class="card"><h3>Hesap Kapatma Süreçleri</h3><p>Platform kurallarına uygun başvuru ve raporlama.</p></div>
-    </div>
+  <div class="section-title"><h2>Hizmetlerimiz</h2></div>
+  <div class="grid">
+    <div class="card"><h3>Telefon Güvenliği Analizi</h3><p>Mobil cihazlarda güvenlik açıklarının tespiti ve raporlanması.</p></div>
+    <div class="card"><h3>WhatsApp Hesap Güvenliği</h3><p>Yetkisiz erişim ve güvenlik risklerinin analizi.</p></div>
+    <div class="card"><h3>Hesap Kurtarma Danışmanlığı</h3><p>Sosyal medya ve platform hesapları için resmî süreç yönetimi.</p></div>
+    <div class="card"><h3>Fake Hesap İnceleme</h3><p>Sahte ve taklit hesapların OSINT analizleri.</p></div>
+    <div class="card"><h3>Hesap Kapatma Süreçleri</h3><p>Platform kurallarına uygun başvuru ve raporlama.</p></div>
+  </div>
 </section>
 
 <section>
-    <div class="section-title"><h2>Bilgilendirici SEO İçerikleri</h2></div>
-
-    <div class="seo-box"><h3>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h3><p>Güvenilir hacker kiralama hizmetleri etik ve yasal çerçevede sunulmalıdır.</p></div>
-    <div class="seo-box"><h3>Kiralık hacker mı arıyorsunuz?</h3><p>Profesyonel ve gizlilik odaklı dijital danışmanlık çözümleri sunuyoruz.</p></div>
-    <div class="seo-box"><h3>Kiralık hacker iletişim</h3><p>Şeffaf ve güvenli iletişim kanalları ile destek sağlıyoruz.</p></div>
-    <div class="seo-box"><h3>Telefon takip uzaktan telefon erişimi</h3><p>Telefon güvenliği analizleri izinli ve hukuki çerçevede değerlendirilir.</p></div>
-    <div class="seo-box"><h3>WhatsApp yazışma dökümü için hacker arıyorum</h3><p>WhatsApp güvenliği danışmanlık kapsamında ele alınır.</p></div>
+  <div class="section-title"><h2>Bilgilendirici SEO İçerikleri</h2></div>
+  <div class="seo-box"><h3>Türkiye'nin En Güvenilir Hacker Kiralama Hizmetleri</h3><p>Güvenilir hacker kiralama hizmetleri etik ve yasal çerçevede sunulmalıdır.</p></div>
+  <div class="seo-box"><h3>Kiralık hacker mı arıyorsunuz?</h3><p>Profesyonel ve gizlilik odaklı dijital danışmanlık çözümleri sunuyoruz.</p></div>
+  <div class="seo-box"><h3>Kiralık hacker iletişim</h3><p>Şeffaf ve güvenli iletişim kanalları ile destek sağlıyoruz.</p></div>
+  <div class="seo-box"><h3>Telefon takip uzaktan telefon erişimi</h3><p>Telefon güvenliği analizleri izinli ve hukuki çerçevede değerlendirilir.</p></div>
+  <div class="seo-box"><h3>WhatsApp yazışma dökümü için hacker arıyorum</h3><p>WhatsApp güvenliği danışmanlık kapsamında ele alınır.</p></div>
 </section>
 
 <section id="contact" class="contact">
-    <div class="section-title"><h2>Bize Ulaşın</h2></div>
-    <p>Profesyonel destek almak için bizimle iletişime geçin.</p>
-    <a href="https://wa.me/905465920064" target="_blank">WhatsApp İletişim</a>
+  <div class="section-title"><h2>Bize Ulaşın</h2></div>
+  <p>Profesyonel destek almak için bizimle iletişime geçin.</p>
+  <a href="https://wa.me/905465920064" target="_blank">WhatsApp İletişim</a>
 </section>
 
 <footer>
-    Profesyonel Kiralık Hacker Hizmetleri. Hacker arıyorum diyorsanız bize ulaşabilirsiniz. WhatsApp: +90 546 592 0064
+  Profesyonel Kiralık Hacker Hizmetleri. Hacker arıyorum diyorsanız bize ulaşabilirsiniz. WhatsApp: +90 546 592 0064
 </footer>
 
 <a class="whatsapp" href="https://wa.me/905465920064" target="_blank">WhatsApp</a>
 
-<script>
-const c=document.getElementById("matrix");
-const ctx=c.getContext("2d");
-c.width=innerWidth;c.height=innerHeight;
-const letters="01HACKER";
-const size=14;
-const cols=c.width/size;
-const drops=Array.from({length:cols}).fill(1);
+<!-- Fake Console -->
+<div id="console"></div>
 
-setInterval(()=>{
-ctx.fillStyle="rgba(2,6,23,0.05)";
-ctx.fillRect(0,0,c.width,c.height);
-ctx.fillStyle="#22c55e";
-ctx.font=size+"px monospace";
-drops.forEach((y,i)=>{
-const t=letters[Math.floor(Math.random()*letters.length)];
-ctx.fillText(t,i*size,y*size);
-if(y*size>c.height&&Math.random()>0.975)drops[i]=0;
-drops[i]++;
+<!-- Scroll Code -->
+<div id="codeflow">
+<code>
+$ init matrix<br>
+$ load modules<br>
+$ encrypt channel<br>
+$ verify session<br>
+$ ready_
+</code>
+</div>
+
+<script>
+/* Loader */
+setTimeout(()=>document.getElementById('loader').style.display='none',2400);
+
+/* Terminal login */
+document.addEventListener('keydown',e=>{
+  if(e.key==='Enter') document.getElementById('login').style.display='none';
 });
+
+/* Matrix */
+const c=document.getElementById("matrix"),ctx=c.getContext("2d");
+c.width=innerWidth;c.height=innerHeight;
+const letters="01HACKER",size=14,cols=c.width/size,drops=Array.from({length:cols}).fill(1);
+setInterval(()=>{
+  ctx.fillStyle="rgba(2,6,23,0.05)";ctx.fillRect(0,0,c.width,c.height);
+  ctx.fillStyle="#22c55e";ctx.font=size+"px monospace";
+  drops.forEach((y,i)=>{
+    const t=letters[Math.floor(Math.random()*letters.length)];
+    ctx.fillText(t,i*size,y*size);
+    if(y*size>c.height&&Math.random()>0.975)drops[i]=0;
+    drops[i]++;
+  });
 },33);
+
+/* Fake console logs */
+const logs=[
+  "session handshake ok",
+  "channel encrypted",
+  "proxy latency stable",
+  "integrity check passed",
+  "heartbeat alive"
+];
+const box=document.getElementById('console');
+setInterval(()=>{
+  const p=document.createElement('p');
+  p.textContent=`[${new Date().toLocaleTimeString()}] ${logs[Math.floor(Math.random()*logs.length)]}`;
+  box.appendChild(p);
+  if(box.children.length>8) box.removeChild(box.firstChild);
+},1200);
+
+/* Scroll code subtle move */
+let y=0;setInterval(()=>{
+  y=(y+1)%60;document.getElementById('codeflow').scrollTop=y;
+},80);
 </script>
 
 </body>
